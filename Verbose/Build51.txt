@@ -1,0 +1,129 @@
+PS F:\Epic\UE_5.1\Engine\Build\BatchFiles> .\RunUAT.bat BuildPlugin -plugin="D:\GitHub\Grid\Grid.uplugin" -package="D:\GitHub\Grid\Grid51"
+Running AutomationTool...
+Using bundled DotNet SDK version: 6.0.302
+Starting AutomationTool...
+Parsing command line: BuildPlugin -plugin=D:\GitHub\Grid\Grid.uplugin -package=D:\GitHub\Grid\Grid51
+Initializing script modules...
+Total script module initialization time: 0.16 s.
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'bUpdatedCPPMacro, bStrictConformanceMode, StaticAnalyzer, StaticAnalyzerOutputType, Compiler, PCHMemoryAllocationFactor, bStrictEnumTypesConformance, WindowsSdkVersion, AdditionalLinkerOptions, bStrictInlineConformance, bShowIncludes, bClangTimeTrace, MaxRootPathLength, MaxNestedPathLength, bCompilerTrace, bStrictPreprocessorConformance' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+Executing commands...
+Copying 131 file(s) using max 64 thread(s)
+Reading plugin from D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Grid.uplugin...
+Building plugin for host platforms: Win64
+Running: F:\Epic\UE_5.1\Engine\Binaries\ThirdParty\DotNet\6.0.302\windows\dotnet.exe "F:\Epic\UE_5.1\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project=D:\GitHub\Grid\Grid51\HostProject\HostProject.uproject -plugin=D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Grid.uplugin -iwyu -noubtmakefiles -manifest=D:\GitHub\Grid\Grid51\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml -nohotreload -log="C:\Users\jonar\AppData\Roaming\Unreal Engine\AutomationTool\Logs\F+Epic+UE_5.1\UBT-UnrealEditor-Win64-Development.txt"
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'MaxRootPathLength, bShowIncludes, bStrictEnumTypesConformance, bStrictPreprocessorConformance, bUpdatedCPPMacro, bClangTimeTrace, MaxNestedPathLength, StaticAnalyzer, Compiler, PCHMemoryAllocationFactor, AdditionalLinkerOptions, bStrictConformanceMode, StaticAnalyzerOutputType, bCompilerTrace, bStrictInlineConformance, WindowsSdkVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+Log file: C:\Users\jonar\AppData\Roaming\Unreal Engine\AutomationTool\Logs\F+Epic+UE_5.1\UBT-UnrealEditor-Win64-Development.txt
+Parsing headers for UnrealEditor
+  Running Internal UnrealHeaderTool D:\GitHub\Grid\Grid51\HostProject\HostProject.uproject D:\GitHub\Grid\Grid51\HostProject\Intermediate\Build\Win64\UnrealEditor\Development\UnrealEditor.uhtmanifest -WarningsAsErrors -installed
+Total of 56 written
+Reflection code generated for UnrealEditor in 1.649923 seconds
+Writing manifest to D:\GitHub\Grid\Grid51\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
+Building UnrealEditor...
+Using Visual Studio 2022 14.38.33144 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+  Executing up to 6 processes, one per physical core
+Building 11 actions with 6 processes...
+[1/11] Resource Default.rc2
+[2/11] Resource Default.rc2
+[3/11] Compile SharedPCH.UnrealEd.ShadowErrors.cpp
+[4/11] Compile Module.GridEditor.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridEditor\Private\GridEditorCommands.cpp(14): warning C4996: 'FEditorStyle::GetStyleSetName': FEditorStyle::GetStyleSetName() is deprecated, use FAppStyle::GetAppStyleSetName() instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridEditor\Private\SGridEditor.cpp(26): warning C4996: 'FDetailsViewArgs::FDetailsViewArgs': This constructor is deprecated, please create an empty FDetailsViewArgs and explicitly set any values that you wish to change. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridEditor\Private\SGridEditor.cpp(62): warning C4996: 'FEditorStyle::GetBrush': FEditorStyle::GetBrush() is deprecated, use FAppStyle::GetBrush() instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[5/11] Link UnrealEditor-GridEditor.lib
+   Creando biblioteca D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridEditor\UnrealEditor-GridEditor.lib y objeto D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridEditor\UnrealEditor-GridEditor.exp
+[6/11] Compile SharedPCH.Engine.ShadowErrors.cpp
+[7/11] Compile Module.GridRuntime.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Hexagon\HexagonGridManager.cpp(154): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Util\GridUtilities.cpp(185): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[8/11] Link UnrealEditor-GridRuntime.lib
+   Creando biblioteca D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridRuntime\UnrealEditor-GridRuntime.lib y objeto D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridRuntime\UnrealEditor-GridRuntime.exp
+[9/11] Link UnrealEditor-GridRuntime.dll
+   Creando biblioteca D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridRuntime\UnrealEditor-GridRuntime.suppressed.lib y objeto D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridRuntime\UnrealEditor-GridRuntime.suppressed.exp
+[10/11] Link UnrealEditor-GridEditor.dll
+   Creando biblioteca D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridEditor\UnrealEditor-GridEditor.suppressed.lib y objeto D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Intermediate\Build\Win64\UnrealEditor\Development\GridEditor\UnrealEditor-GridEditor.suppressed.exp
+[11/11] WriteMetadata UnrealEditor.target
+Total time in Parallel executor: 84.24 seconds
+Total execution time: 89.81 seconds
+Took 89,8732716s to run dotnet.exe, ExitCode=0
+Building plugin for target platforms: Android, IOS, Linux, LinuxArm64, Win64
+Running: F:\Epic\UE_5.1\Engine\Binaries\ThirdParty\DotNet\6.0.302\windows\dotnet.exe "F:\Epic\UE_5.1\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project=D:\GitHub\Grid\Grid51\HostProject\HostProject.uproject -plugin=D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Grid.uplugin -iwyu -noubtmakefiles -manifest=D:\GitHub\Grid\Grid51\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml -nohotreload -log="C:\Users\jonar\AppData\Roaming\Unreal Engine\AutomationTool\Logs\F+Epic+UE_5.1\UBT-UnrealGame-Win64-Development.txt"
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'WindowsSdkVersion, StaticAnalyzerOutputType, bStrictConformanceMode, MaxRootPathLength, PCHMemoryAllocationFactor, bStrictPreprocessorConformance, AdditionalLinkerOptions, bShowIncludes, bStrictInlineConformance, bUpdatedCPPMacro, StaticAnalyzer, bClangTimeTrace, bStrictEnumTypesConformance, Compiler, bCompilerTrace, MaxNestedPathLength' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+Log file: C:\Users\jonar\AppData\Roaming\Unreal Engine\AutomationTool\Logs\F+Epic+UE_5.1\UBT-UnrealGame-Win64-Development.txt
+Parsing headers for UnrealGame
+  Running Internal UnrealHeaderTool D:\GitHub\Grid\Grid51\HostProject\HostProject.uproject D:\GitHub\Grid\Grid51\HostProject\Intermediate\Build\Win64\UnrealGame\Development\UnrealGame.uhtmanifest -WarningsAsErrors -installed
+Total of 46 written
+Reflection code generated for UnrealGame in 0.8229654 seconds
+Writing manifest to D:\GitHub\Grid\Grid51\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
+Building UnrealGame...
+Using Visual Studio 2022 14.38.33144 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+  Executing up to 6 processes, one per physical core
+Building 1 action with 1 process...
+[1/1] Compile Module.GridRuntime.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Hexagon\HexagonGridManager.cpp(154): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Util\GridUtilities.cpp(185): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+Total time in Parallel executor: 23.54 seconds
+Total execution time: 26.80 seconds
+Took 26,8660242s to run dotnet.exe, ExitCode=0
+Running: F:\Epic\UE_5.1\Engine\Binaries\ThirdParty\DotNet\6.0.302\windows\dotnet.exe "F:\Epic\UE_5.1\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project=D:\GitHub\Grid\Grid51\HostProject\HostProject.uproject -plugin=D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Grid.uplugin -iwyu -noubtmakefiles -manifest=D:\GitHub\Grid\Grid51\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml -nohotreload -log="C:\Users\jonar\AppData\Roaming\Unreal Engine\AutomationTool\Logs\F+Epic+UE_5.1\UBT-UnrealGame-Win64-Shipping.txt"
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'bStrictConformanceMode, bStrictPreprocessorConformance, PCHMemoryAllocationFactor, bStrictInlineConformance, AdditionalLinkerOptions, WindowsSdkVersion, MaxRootPathLength, StaticAnalyzer, bCompilerTrace, MaxNestedPathLength, bStrictEnumTypesConformance, Compiler, bShowIncludes, bClangTimeTrace, StaticAnalyzerOutputType, bUpdatedCPPMacro' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+Log file: C:\Users\jonar\AppData\Roaming\Unreal Engine\AutomationTool\Logs\F+Epic+UE_5.1\UBT-UnrealGame-Win64-Shipping.txt
+Parsing headers for UnrealGame
+  Running Internal UnrealHeaderTool D:\GitHub\Grid\Grid51\HostProject\HostProject.uproject D:\GitHub\Grid\Grid51\HostProject\Intermediate\Build\Win64\UnrealGame\Shipping\UnrealGame.uhtmanifest -WarningsAsErrors -installed
+Total of 0 written
+Reflection code generated for UnrealGame in 0.6991286 seconds
+Writing manifest to D:\GitHub\Grid\Grid51\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml
+Building UnrealGame...
+Using Visual Studio 2022 14.38.33144 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+  Executing up to 6 processes, one per physical core
+Building 1 action with 1 process...
+[1/1] Compile Module.GridRuntime.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Hexagon\HexagonGridManager.cpp(154): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Util\GridUtilities.cpp(185): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+Total time in Parallel executor: 20.40 seconds
+Total execution time: 22.85 seconds
+Took 22,9123426s to run dotnet.exe, ExitCode=0
+Reading filter rules from D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Config\FilterPlugin.ini
+Loading FilterPluginAndroid.ini
+Loading FilterPluginIOS.ini
+Loading FilterPluginLinux.ini
+Loading FilterPluginLinuxArm64.ini
+Loading FilterPluginWin64.ini
+BUILD SUCCESSFUL
+AutomationTool executed for 0h 2m 21s
+AutomationTool exiting with ExitCode=0 (Success)
+PS F:\Epic\UE_5.1\Engine\Build\BatchFiles>
+
+
+
+
+
+
+For Resolving:
+
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'bUpdatedCPPMacro, bStrictConformanceMode, StaticAnalyzer, StaticAnalyzerOutputType, Compiler, PCHMemoryAllocationFactor, bStrictEnumTypesConformance, WindowsSdkVersion, AdditionalLinkerOptions, bStrictInlineConformance, bShowIncludes, bClangTimeTrace, MaxRootPathLength, MaxNestedPathLength, bCompilerTrace, bStrictPreprocessorConformance' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'MaxRootPathLength, bShowIncludes, bStrictEnumTypesConformance, bStrictPreprocessorConformance, bUpdatedCPPMacro, bClangTimeTrace, MaxNestedPathLength, StaticAnalyzer, Compiler, PCHMemoryAllocationFactor, AdditionalLinkerOptions, bStrictConformanceMode, StaticAnalyzerOutputType, bCompilerTrace, bStrictInlineConformance, WindowsSdkVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+
+[4/11] Compile Module.GridEditor.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridEditor\Private\GridEditorCommands.cpp(14): warning C4996: 'FEditorStyle::GetStyleSetName': FEditorStyle::GetStyleSetName() is deprecated, use FAppStyle::GetAppStyleSetName() instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridEditor\Private\SGridEditor.cpp(26): warning C4996: 'FDetailsViewArgs::FDetailsViewArgs': This constructor is deprecated, please create an empty FDetailsViewArgs and explicitly set any values that you wish to change. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridEditor\Private\SGridEditor.cpp(62): warning C4996: 'FEditorStyle::GetBrush': FEditorStyle::GetBrush() is deprecated, use FAppStyle::GetBrush() instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+
+[7/11] Compile Module.GridRuntime.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Hexagon\HexagonGridManager.cpp(154): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Util\GridUtilities.cpp(185): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'WindowsSdkVersion, StaticAnalyzerOutputType, bStrictConformanceMode, MaxRootPathLength, PCHMemoryAllocationFactor, bStrictPreprocessorConformance, AdditionalLinkerOptions, bShowIncludes, bStrictInlineConformance, bUpdatedCPPMacro, StaticAnalyzer, bClangTimeTrace, bStrictEnumTypesConformance, Compiler, bCompilerTrace, MaxNestedPathLength' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+
+[1/1] Compile Module.GridRuntime.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Hexagon\HexagonGridManager.cpp(154): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Util\GridUtilities.cpp(185): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+
+C:\Users\jonar\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml(5): warning: The element 'WindowsPlatform' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ToolchainVersion' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expected: 'bStrictConformanceMode, bStrictPreprocessorConformance, PCHMemoryAllocationFactor, bStrictInlineConformance, AdditionalLinkerOptions, WindowsSdkVersion, MaxRootPathLength, StaticAnalyzer, bCompilerTrace, MaxNestedPathLength, bStrictEnumTypesConformance, Compiler, bShowIncludes, bClangTimeTrace, StaticAnalyzerOutputType, bUpdatedCPPMacro' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+
+[1/1] Compile Module.GridRuntime.cpp
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Hexagon\HexagonGridManager.cpp(154): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+D:\GitHub\Grid\Grid51\HostProject\Plugins\Grid\Source\GridRuntime\Private\Util\GridUtilities.cpp(185): warning C4996: 'FGenericPlatformMath::Sqrt': Arguments cause function resolution ambiguity. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
