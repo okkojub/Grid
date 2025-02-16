@@ -19,12 +19,18 @@
     {
       "Name": "GridRuntime",
       "Type": "Runtime",
-      "LoadingPhase": "PreDefault"
+      "LoadingPhase": "PreDefault",
+      "PlatformAllowList": [
+          "Win64"
+      ]
     },
     {
       "Name": "GridEditor",
       "Type": "Editor",
-      "LoadingPhase": "PostEngineInit"
+      "LoadingPhase": "PostEngineInit",
+      "PlatformAllowList": [
+          "Win64"
+      ]
     }
 	]
 }
